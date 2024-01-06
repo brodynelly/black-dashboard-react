@@ -110,7 +110,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 p {
@@ -728,7 +728,7 @@ pre code {
   padding-left: 15px;
 }
 
-.col {
+.F{
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
@@ -2132,7 +2132,8 @@ select.form-control[multiple] {
 }
 
 textarea.form-control {
-  height: auto;
+  height: 100rem;
+  padding: 20rem 20rem;
 }
 
 .form-group {
@@ -4953,6 +4954,7 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.5rem;
+  position: relative;
 }
 
 .card-title {
