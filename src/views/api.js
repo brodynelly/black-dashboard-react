@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
-const AZURE_SUBSCRIPTION_KEY = '93d3861e3242483ca483771a19e43af8';
+const AZURE_SUBSCRIPTION_KEY = 'ea8f03351bdb444bbdc32de8a5d701cf';
 const AZURE_REGION = 'centralus'; // e.g., 'westus'
 const AZURE_ENDPOINT = `https://api.cognitive.microsofttranslator.com`;
 
@@ -20,7 +20,7 @@ const translateText = async (text, targetLanguage) => {
       params: {
         'api-version': '3.0',
         'from': 'es', // Assuming the source language is English
-        'to': [targetLanguage],
+        'to': 'en',
       },
       data: [{
         'text': text,

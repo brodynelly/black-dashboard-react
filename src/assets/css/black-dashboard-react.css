@@ -16085,7 +16085,7 @@ p.description {
 .blockquote {
   border-left: none;
   border: 1px solid #344675;
-  padding: 20px;
+  padding: 5px;
   font-size: 0.9625rem;
   line-height: 1.8;
 }
@@ -16095,8 +16095,8 @@ p.description {
   text-transform: uppercase;
 }
 .blockquote.blockquote-primary {
-  border-color: #e14eca;
-  color: #e14eca;
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 .blockquote.blockquote-primary small {
   color: #e14eca;

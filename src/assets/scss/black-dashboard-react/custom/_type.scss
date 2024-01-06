@@ -119,11 +119,16 @@ p{
 }
 
 .blockquote{
-    border-left: none;
-    border: 1px solid $default;
-    padding: 20px;
-    font-size: $blockquote-font-size;
-    line-height: 1.8;
+    background-color: #1b1722;
+  border: 1px solid #1b1722;
+  border-radius: 2px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre-wrap;
 
     small{
         color: $default;
@@ -132,12 +137,8 @@ p{
     }
 
     &.blockquote-primary{
-        border-color: $primary;
-        color: $primary;
-
-        small{
-            color: $primary;
-        }
+        display: block;
+        color: #333;
     }
 
     &.blockquote-danger{

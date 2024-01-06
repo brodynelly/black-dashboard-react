@@ -74,19 +74,15 @@ function Dashboard(props) {
       {screen === 1 && (
         <Col lg="9" md="30">
         <Card className = "main-text"> 
-        <CardHeader>
-          <CardTitle>
-            <Col className="text-center" sm="12">
-              <CardTitle>
-                
-                <h3>Translate</h3>
-                <h5>paste your article down below to PRACTICE SPANISH!!</h5>
-              </CardTitle>
-            </Col>
-
-          </CardTitle>
-        </CardHeader>
+        
         <CardBody>
+
+        <CardTitle className="text-center"> 
+              <br/>
+                <b><code  style={{ fontSize: "30px", color: "white" }}>Translatoor</code></b>
+                <code style={{ color: "" }}> paste your article down below to PRACTICE SPANISH!!</code>
+              </CardTitle>
+           
          
          
         <form>
@@ -99,26 +95,29 @@ function Dashboard(props) {
           </div>
       
         </form>
-     
+      <Col  className="ml-auto mr-auto" lg="3">
         <ButtonGroup
-          className="btn-group-toggle float-right"
+          className="btn-group-toggle float-none"
             data-toggle="buttons"
         >
         <Button
           tag="label"
-          className="btn-simple"
-          color="info"
-          size="sm"
+          className="btn-simple button-outline-gradient"
+          color="green"
+          size="lg"
           onClick={handleTranslate}
         >
-           <span className="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+           <code 
+           style={{ color: "white" }}>
             Translate
-          </span>
+          </code>
         </Button>
         </ButtonGroup>
+        </Col>
         </CardBody>
         </Card>
         </Col> 
+        
       )}
 
       {screen === 2 && (

@@ -1,3 +1,38 @@
+.card1{
+
+  label{
+    color: rgba($white, 0.6);
+  }
+
+  background: rgba($black-states, 0.6);
+    border: 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: $box-shadow;
+
+  
+    .card-body{
+      padding: 15px;
+
+      &.table-full-width{
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .card-title{
+        color: $white;
+        text-transform: inherit;
+        font-weight: $font-weight-light;
+        margin-bottom: .75rem;
+      }
+
+      .card-description, .card-category{
+        color: rgba($white, 0.6);
+      }
+
+    }
+}
 .card{
     background: $card-black-background;
     border: 0;
