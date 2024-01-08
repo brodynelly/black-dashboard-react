@@ -13,7 +13,6 @@ import "/Users/Brody Nelson/OneDrive - University of Missouri/Documents/Computer
 import Draggable from "react-draggable";
 import TerminalInput from "./linetypes/TerminalInput";
 import TerminalOutput from "./linetypes/TerminalOutput";
-import Terminal from "./style.css";
 // reactstrap components
 import {
 	Button,

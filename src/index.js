@@ -33,18 +33,18 @@ import BackgroundColorWrapper from "./components/BackgroundColorWrapper/Backgrou
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-	<ThemeContextWrapper>
-		<BackgroundColorWrapper>
-			<BrowserRouter>
-				<Routes>
-					<Route path="/admin/*" element={<AdminLayout />} />
-					<Route path="/rtl/*" element={<RTLLayout />} />
-					<Route
-						path="*"
-						element={<Navigate to="/admin/dashboard" replace />}
-					/>
-				</Routes>
-			</BrowserRouter>
-		</BackgroundColorWrapper>
-	</ThemeContextWrapper>
+  <ThemeContextWrapper>
+    <BackgroundColorWrapper>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/admin/*" element={<AdminLayout />} />
+          <Route path="/rtl/*" element={<RTLLayout />} />
+          <Route
+            path="*"
+            element={<Navigate to="/admin/dashboard" replace />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </BackgroundColorWrapper>
+  </ThemeContextWrapper>
 );
