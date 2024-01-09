@@ -1,52 +1,26 @@
 import {
 	useState,
 	useEffect,
-	useRef,
-	KeyboardEvent,
-	ChangeEvent,
-	ReactNode,
-	ReactNodeArray,
 } from "react";
 import translateText from "./api";
-import classNames from "classnames";
-import "/Users/Brody Nelson/OneDrive - University of Missouri/Documents/Computer Science Projects/black-dashboard-react/src/assets/css/black-dashboard-react.css";
+import "../assets/css/black-dashboard-react.css";
 import Draggable from "react-draggable";
-import TerminalInput from "./linetypes/TerminalInput";
-import TerminalOutput from "./linetypes/TerminalOutput";
 // reactstrap components
 import {
-	Button,
-	ButtonGroup,
 	Card,
 	CardHeader,
 	CardBody,
-	CardTitle,
-	DropdownToggle,
-	DropdownMenu,
-	DropdownItem,
-	UncontrolledDropdown,
-	Label,
-	FormGroup,
-	Input,
-	Table,
 	Row,
 	Col,
-	UncontrolledTooltip,
 } from "reactstrap";
 
 // core components
-import {
-	chartExample1,
-	chartExample2,
-	chartExample3,
-	chartExample4,
-} from "variables/charts.js";
+
 
 function Translator({ originalArticle, resetApp, props = {} }) {
 	const [selectedWords, setSelectedWords] = useState([]);
 	const [translatedSentence, setTranslatedSentence] = useState("");
 	const [isBlockquoteVisible, setIsBlockquoteVisible] = useState(false);
-	const [inputValue, setInputValue] = useState("");
 	const [notes, setNotes] = useState("");
 
 	const containerStyles = {
