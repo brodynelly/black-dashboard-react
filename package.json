@@ -20,7 +20,7 @@
     "react-scripts": "5.0.1",
     "react-terminal-ui": "^1.2.0",
     "sass": "1.62.1"
-  },g
+  },
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build", 
